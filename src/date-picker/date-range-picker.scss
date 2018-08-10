@@ -3,17 +3,9 @@
 @include b(date-range-picker) {
   width: 646px;
 
-  &.has-sidebar {
-    width: 756px;
-  }
-
   table {
     table-layout: fixed;
     width: 100%;
-  }
-
-  .el-picker-panel__body {
-    min-width: 513px;
   }
 
   .el-picker-panel__content {
@@ -49,6 +41,9 @@
 
     @include when(left) {
       border-right: 1px solid $--datepicker-inner-border-color;
+      @include small(){
+        border-right: none;
+      }
     }
 
     @include when(right) {

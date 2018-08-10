@@ -597,6 +597,7 @@ $--steps-padding: 20px !default;
 
 /* Menu
 --------------------------*/
+$--menu-item-font-size: $--font-size-base !default;
 $--menu-item-color: $--color-text-primary !default;
 $--menu-item-fill: $--color-white !default;
 $--menu-item-hover-fill: $--color-primary-light-9 !default;
@@ -614,13 +615,14 @@ $--rate-icon-color: $--color-text-placeholder !default;
 $--datepicker-color: $--color-text-regular !default;
 $--datepicker-off-color: $--color-text-placeholder !default;
 $--datepicker-header-color: $--color-text-regular !default;
-$--datepicker-icon-color: $--color-text-primary !default;
+$--datepicker-select-color: #0065b2 !default;
+$--datepicker-icon-color: $--datepicker-select-color !default;
 $--datepicker-border-color: $--disabled-border-base !default;
+$--datepicker-inrange-color: mix($--color-white, $--datepicker-select-color, 90%) !default;
 $--datepicker-inner-border-color: #e4e4e4 !default;
-$--datepicker-inrange-color: $--border-color-extra-light !default;
 $--datepicker-inrange-hover-color: $--border-color-extra-light !default;
-$--datepicker-active-color: $--color-primary !default;
-$--datepicker-text-hover-color: $--color-primary !default;
+$--datepicker-active-color: #bbbbbb !default;
+$--datepicker-text-hover-color: $--datepicker-select-color !default;
 $--datepicker-cell-hover-color: #fff !default;
 
 /* Loading
