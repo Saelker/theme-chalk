@@ -41,12 +41,15 @@
     border: 0;
     background-color: transparent;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 13px;
     color: $--datepicker-color;
     padding-left: 12px;
     text-align: left;
     outline: none;
     cursor: pointer;
+    @include small(){
+      line-height: 18px;
+    }
 
     &:hover {
       color: $--datepicker-text-hover-color;
