@@ -8,12 +8,8 @@
   border-radius: $--border-radius-base;
   line-height: 30px;
   margin: 5px 0;
-  width: 100%;
-  max-width: 756px;
 
   @include e((body, body-wrapper)) {
-    display: flex;
-    flex-wrap: wrap;
     &::after {
       content: "";
       display: table;
@@ -47,9 +43,6 @@
     text-align: left;
     outline: none;
     cursor: pointer;
-    @include small(){
-      line-height: 18px;
-    }
 
     &:hover {
       color: $--datepicker-text-hover-color;
@@ -108,11 +101,6 @@
 .el-picker-panel *[slot=sidebar],
 .el-picker-panel__sidebar {
   width: 110px;
-  @media (max-width: 400px) {
-    width: 100%;
-    display: flex;
-    margin-bottom: 10px;
-  }
   border-right: 1px solid $--datepicker-inner-border-color;
   box-sizing: border-box;
   padding-top: 6px;
@@ -122,13 +110,5 @@
 
 .el-picker-panel *[slot=sidebar] + .el-picker-panel__body,
 .el-picker-panel__sidebar + .el-picker-panel__body {
-  width: 100%;
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
+  margin-left: 110px;
 }
-
-.el-picker-panel__content{
-  min-width: 290px;
-}
-

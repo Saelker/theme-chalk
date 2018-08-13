@@ -187,16 +187,3 @@
     @content
   }
 }
-
-@mixin small(){
-  @media (max-width: 690px){
-    @content;
-  }
-}
-
-@mixin mobile(){
-  @media (max-height: 670px){
-    @content;
-  }
-}
-
