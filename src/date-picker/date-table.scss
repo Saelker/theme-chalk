@@ -41,6 +41,10 @@
     cursor: pointer;
     position: relative;
 
+    @include mobile(){
+      padding: 0;
+    }
+
     & div {
       height: 30px;
       padding: 3px 0;

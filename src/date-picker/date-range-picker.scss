@@ -55,6 +55,10 @@
         }
       }
     }
+
+    @include mobile(){
+      padding: 4px;
+    }
   }
 
   @include e(editors-wrap) {

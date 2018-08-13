@@ -194,3 +194,9 @@
   }
 }
 
+@mixin mobile(){
+  @media (max-height: 670px){
+    @content;
+  }
+}
+
