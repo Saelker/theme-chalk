@@ -137,7 +137,7 @@
 
     &.week {
       color: $--datepicker-header-color;
-      background-color: mix($--color-white, $--datepicker-week-number-color, 80%);
+      background-color: $--datepicker-week-number-color;
     }
   }
 
