@@ -136,9 +136,8 @@
     }
 
     &.week {
-      font-size: 80%;
       color: $--datepicker-header-color;
-      background-color: mix($--color-white, $--datepicker-select-color, 80%);
+      background-color: mix($--color-white, $--datepicker-week-number-color, 80%);
     }
   }
 
