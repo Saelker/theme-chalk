@@ -66,7 +66,7 @@
     &.today {
       position: relative;
       span {
-        color: $--datepicker-select-color;
+        color: $--datepicker-current-day-color;
         font-weight: bold;
       }
       &.start-date span,
